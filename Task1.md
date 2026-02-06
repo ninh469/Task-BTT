@@ -73,7 +73,7 @@
     - TTL thấp: cập nhật nhanh nhưng truy vấn nhiều
     - TTL cao: giảm tải server nhưng cập nhật chậm
 # II. HTML, CSS, JS
-## 1. HTML, CSS
+## 1. HTML
 ### Cấu trúc tối thiểu của một trang HTML gồm các thẻ
 ``` HTML
 <!DOCTYPE html>
@@ -95,8 +95,6 @@ VD:
 <a href="https://thachotoi.com">Toilagay</a>
 <img src="khoc.jpg" alt="Khóc">
 ```
--
-  + 
 - Để trình bày nội dung trên HTML ta có thể sử dụng các thẻ sau:
   + Tiêu đề: `<h1>…<h6>`
   + Đoạn văn: `<p>`
@@ -113,39 +111,55 @@ VD:
   + `<iframe>` nhúng trang khác.
 ### Form HTML
 - Cấu trúc của 1 form: `<form>...</form>`
-- `<form>` có thể chứa một hoặc nhiều phần tử biểu mẫu sau:
-  + `<Label>`: `<label for="username">Tên đăng nhập:</label>`, for phải trùng với id của input.
-  + `<select>`: tạo danh sách chọn.
-    
-  + `<option>`: định nghĩa một tùy chọn có thể được chọn trong <select>, sử dụng multiple để chọn được nhiều hơn 1 giá trị.
-    
-  + `<button>`: Tạo nút bấm. Có thể dùng thay cho `input type="submit"`.
-    
-  + `<input>`: `<input type="text" id="username" name="username">`
+- `form` có thể chứa một hoặc nhiều phần tử biểu mẫu sau:
+  + `label`: `<label for="username">Tên đăng nhập:</label>` (for phải trùng với id của input)
+  + `select`: tạo danh sách chọn
+  + `option`: định nghĩa một tùy chọn trong `<select>`, dùng `multiple` để chọn nhiều giá trị
+  + `button`: tạo nút bấm (có thể thay cho `input type="submit"`)
+  + `input`: `<input type="text" id="username" name="username">`
 
-| Type       | Công dụng                     |
-| ---------- | ----------------------------- |
-| `text`     | Nhập chữ                      |
-| `password` | Nhập mật khẩu                 |
-| `email`    | Email                         |
-| `number`   | Số                            |
-| `date`     | Ngày                          |
-| `radio`    | Chọn 1                        |
-| `checkbox` | Chọn nhiều                    |
-| `file`     | Upload file                   |
-| `submit`   | Gửi form                      |
+| Type       | Công dụng     |
+| ---------- | ------------- |
+| `text`     | Nhập chữ      |
+| `password` | Nhập mật khẩu |
+| `email`    | Email         |
+| `number`   | Số            |
+| `date`     | Ngày          |
+| `radio`    | Chọn 1        |
+| `checkbox` | Chọn nhiều    |
+| `file`     | Upload file   |
+| `submit`   | Gửi form      |
 
 - Form Attributes:
-  + Method `POST` và `GET`
-  + `target` là 1 thuộc tính nhưng mà được dùng trong 1 số thẻ HTML nhất định VD: `<form>, <a>, <base>...)`
+  + `GET` dùng để gửi dữ liệu thông qua URL, phù hợp cho các chức năng tìm kiếm.
+  + `POST` gửi dữ liệu trong body của request, không hiển thị trên URL nên an toàn hơn, thường dùng cho đăng nhập và đăng ký.
+  + `target`: dùng trong một số thẻ HTML như `<form>`, `<a>`, `<base>`
 
-| Value     | Ý nghĩa                               |
+| Value     | Ý nghĩa                                 |
 | ----------- | ------------------------------------- |
 | `_blank`    | Mở kết quả ở **tab / cửa sổ mới**     |
 | `_self`     | Mở ngay **trang hiện tại** (mặc định) |
 | `_parent`   | Mở ở **frame cha**                    |
 | `_top`      | Mở **toàn bộ cửa sổ**, thoát frame    |
 | `framename` | Mở trong **iframe có tên**            |
+
+## 2. CSS
+### Có 3 cách trình bàu CSS trong HTML:
++ Inline CSS:
+```HTML
+  `<p style="color:red;">Thachotoi</p>`
+```
++ Internal CSS:   
+``` HTML
+<style>
+  p { color: red; }
+</style>
+```
++ External CSS:
+```HTML
+   `<link rel="stylesheet" href="style.css">`
+```
+
 
 
 
