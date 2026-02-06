@@ -73,7 +73,85 @@
     - TTL thấp: cập nhật nhanh nhưng truy vấn nhiều
     - TTL cao: giảm tải server nhưng cập nhật chậm
 # II. HTML, CSS, JS
-## HTML
+## 1. HTML, CSS
+### Cấu trúc tối thiểu của một trang HTML gồm các thẻ
+``` HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+  <h1>This is a Heading</h1>
+  <p>This is a paragraph.</p>
+</body>
+</html>
+
+```
+- `Element` thường có dạng: `<tagname>` nội dung `</tagname>`.
+- `Attribute` là thông tin bổ sung nằm trong thẻ mở: `name="value"` (vd: href, src, alt, style, …).
+VD:
+```HTML
+<a href="https://thachotoi.com">Toilagay</a>
+<img src="khoc.jpg" alt="Khóc">
+```
+-
+  + 
+- Để trình bày nội dung trên HTML ta có thể sử dụng các thẻ sau:
+  + Tiêu đề: `<h1>…<h6>`
+  + Đoạn văn: `<p>`
+  + Định dạng: `<b> <strong> <i> <em> <mark> <small> <del> <ins> <sub> <sup>`
+  + Trích dẫn: `<blockquote> <q> <cite> <abbr>`
+  + Comment: `<!-- ... -->`
+  + Tables: `<table> <tr> <th> <td>`
+  + Lists:
+    - Không thứ tự: `<ul><li>…`
+    - Có thứ tự: `<ol><li>…`
+- Ngoài ra còn có các thẻ bố cục:
+  + `<div>` dùng gom khối nội dung.
+  + `class, id`.
+  + `<iframe>` nhúng trang khác.
+### Form HTML
+- Cấu trúc của 1 form: `<form>...</form>`
+- `<form>` có thể chứa một hoặc nhiều phần tử biểu mẫu sau:
+  + `<Label>`: `<label for="username">Tên đăng nhập:</label>`, for phải trùng với id của input.
+  + `<select>`: tạo danh sách chọn.
+    
+  + `<option>`: định nghĩa một tùy chọn có thể được chọn trong <select>, sử dụng multiple để chọn được nhiều hơn 1 giá trị.
+    
+  + `<button>`: Tạo nút bấm. Có thể dùng thay cho `input type="submit"`.
+    
+  + `<input>`: `<input type="text" id="username" name="username">`
+
+| Type       | Công dụng                     |
+| ---------- | ----------------------------- |
+| `text`     | Nhập chữ                      |
+| `password` | Nhập mật khẩu                 |
+| `email`    | Email                         |
+| `number`   | Số                            |
+| `date`     | Ngày                          |
+| `radio`    | Chọn 1                        |
+| `checkbox` | Chọn nhiều                    |
+| `file`     | Upload file                   |
+| `submit`   | Gửi form                      |
+
+- Form Attributes:
+  + Method `POST` và `GET`
+  + `target` là 1 thuộc tính nhưng mà được dùng trong 1 số thẻ HTML nhất định VD: `<form>, <a>, <base>...)`
+
+| Value     | Ý nghĩa                               |
+| ----------- | ------------------------------------- |
+| `_blank`    | Mở kết quả ở **tab / cửa sổ mới**     |
+| `_self`     | Mở ngay **trang hiện tại** (mặc định) |
+| `_parent`   | Mở ở **frame cha**                    |
+| `_top`      | Mở **toàn bộ cửa sổ**, thoát frame    |
+| `framename` | Mở trong **iframe có tên**            |
+
+
+
+
+
+  
 
 
   
