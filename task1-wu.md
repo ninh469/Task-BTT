@@ -1,8 +1,13 @@
 # Ác mộng đổ đèo
+### Tổng quan 
+Trong chall này ta sẽ cần chỉnh method HTTP và request parameter để đạt được điều kiện yêu cầu
 <img width="1813" height="568" alt="image" src="https://github.com/user-attachments/assets/45adab8a-9ba9-4200-ab62-d3ccd320374a" />
+**Đổi HTTP method**
 - Hữu duyên em thử sửa `GET` -> `POST` được rồi yeah!!!
 - Sau đó e Request body `task=1` e là không thể nên ta sẽ request query parameters
 <img width="1998" height="568" alt="image" src="https://github.com/user-attachments/assets/b541c571-195b-47ad-b800-1826f5393609" />
+**Đổi User-agent**
+  
 - Để thành người thuộc BTT thì ta đổi `User-agent` -> Ban Truyen Thong
 <img width="1989" height="576" alt="image" src="https://github.com/user-attachments/assets/781c254f-054d-48ab-a8d8-c0b932995b1d" />
 - Request body KCSC
